@@ -5,6 +5,18 @@ body {
     margin: 0px;
 }
 
+footer {
+    padding: 30px;
+    font-size: 24px;
+    clear: both;
+    text-align: right;
+    color: navy;
+}
+
+span#blue {
+    color: navy;
+}
+
 @media screen and (min-width: 601px) {
     h1 {
         font-size: 96px;
@@ -14,14 +26,6 @@ body {
     
     h2 {
         margin: 30px 0px 0px 0px;
-    }
-    
-    footer {
-        padding: 30px;
-        font-size: 24px;
-        clear: both;
-        text-align: right;
-        color: navy;
     }
     
     .card {
@@ -53,22 +57,37 @@ body {
     div.container {
         padding: 20px 50px;
     }
-    
-    span#blue {
-        color: navy;
-    }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
+
+    html {
+        display: flex;
+    }
+
     body {
-        display: block;
+        display: flex;
+        padding: 10%;
+        flex-direction: column;
+        min-height: 95vh;
+        flex: 1;
     }
 
     h1 {
-        font-size: 16px;
+        font-size: 64px;
+        font-weight: bold;
+        text-align: center;
     }
 
-    .card {
+    .container {
+        flex: 1;
+    }
+
+    .logo {
+        width: 100px
+    }
+
+    .card-img {
         width: 100%;
     }
 
@@ -78,5 +97,10 @@ body {
 
     .left {
         float: none;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 16px;
     }
 }
